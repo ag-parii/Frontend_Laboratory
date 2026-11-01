@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Bill Calculator</title>
+    </head>
+    <body>
+        <script>let type = "domestic";
+let units = 100;
+let bill;
+
+switch (type) {
+    case "domestic":
+        bill = units * 5;
+        break;
+
+    case "commercial":
+        bill = units * 8;
+        break;
+
+    case "industrial":
+        bill = units * 10;
+        break;
+
+    default:
+        console.log("Invalid type");
+}
+
+console.log("Electricity Bill =", bill);</script>
+    </body>
+</html>

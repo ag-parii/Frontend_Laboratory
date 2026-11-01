@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Digits Sum</title>
+        <body>
+            <script>let num = 5837462;
+let evenSum = 0, oddSum = 0;
+
+while (num > 0) {
+    let digit = num % 10;
+
+    if (digit % 2 === 0)
+        evenSum += digit;
+    else
+        oddSum += digit;
+
+    num = Math.floor(num / 10);
+}
+
+console.log("Sum of even digits:", evenSum);
+console.log("Sum of odd digits:", oddSum);</script>
+        </body>
+    </head>
+</html>
